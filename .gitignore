@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment folders
+env/
+venv/
+.venv/
+
+# Logs
+*.log
+
+# Data files
+*.csv
+*.json
+
+# Video files
+*.mp4
+*.avi
+*.mov
+
+# Model files
+*.h5
+*.pth
+*.pt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/

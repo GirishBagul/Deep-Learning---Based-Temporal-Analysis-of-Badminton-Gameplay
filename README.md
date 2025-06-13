@@ -1,31 +1,35 @@
-# Deep Learning - Based Temporal Analysis of Badminton Gameplay
+# Project README
+## Introduction
+This project is built using Streamlit, a Python library that allows you to create web apps for data science and machine learning.
 
-This project uses deep learning techniques to analyze badminton match videos by detecting player positions, movements, court key points, and classifying shots over time. The goal is to extract temporal dynamics of gameplay for performance analysis and tactical insights.
+## Installation
+Before running the application, make sure to install the required dependencies. It is highly recommended to use a virtual environment (venv) to isolate the project dependencies and avoid conflicts with other projects.
 
-## Features
+To create a virtual environment, run the following command:
+```bash
+python -m venv venv
+```
+Then, activate the virtual environment:
+```bash
+# On Windows
+venv\Scripts\activate
 
-- Detection of player positions and movements on court
-- Identification of court key points for spatial reference
-- Shot classification for each rally
-- Extraction of rally data and conversion to CSV format
-- Evaluation using confusion matrix for shot classification accuracy
+# On Linux/Mac
+source venv/bin/activate
+```
+Next, install the required dependencies by running:
+```bash
+pip install -r requirements.txt
+```
+Make sure to install all the dependencies listed in the `requirements.txt` file.
 
-## Technologies Used
+## Running the Application
+To run the application, navigate to the project root and execute the following command:
+```bash
+streamlit run frontend/app.py --server.fileWatcherType none
+```
+This will start the Streamlit server and make the application available in your web browser.
 
-- Python for video processing and data extraction
-- Deep learning frameworks (e.g., TensorFlow, PyTorch)
-- OpenCV for computer vision tasks
-- Custom dataset curated from multiple badminton match videos
-
-## How to Run
-
-1. Clone the repository.
-2. Install required Python packages: `pip install -r requirements.txt`
-3. Prepare the video dataset.
-4. Run the detection and classification scripts.
-5. Export extracted rally and shot data to CSV files.
-6. Use evaluation scripts to generate confusion matrices.
-
-## License
-
-This project is licensed under the MIT License.
+## Notes
+* Make sure you have Streamlit installed by running `pip install streamlit` in your terminal.
+* The `--server.fileWatcherType none` flag is used to disable file watching, which can improve performance in some cases.
